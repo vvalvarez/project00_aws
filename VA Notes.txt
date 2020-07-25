@@ -1,0 +1,36 @@
+# How to install apache on Linux 2. Preparation for the project
+sudo yum update -y
+    sudo yum install httpd -y
+    sudo systemctl start httpd
+    sudo systemctl status httpd
+    sudo chmod -R 777 /var/www/html
+       echo "<html>
+> <head>
+> <title> My first Web Server </title>
+> </head>
+> <body>
+> <h1> Hello My fellow DevOps</h1>
+> </body>
+> </html>" > /var/www/html/index.html
+    cd /var/www/html
+    sudo systemctl restart httpd
+    sudo systemctl enable httpd      # web server is enabled now, web server will automatiacally restart when restarting hte instance
+``` bash
+    #!1 /bin/bash
+    yum update -y
+    sudo yum install httpd -y
+    DATE_TIME=`date`
+    echo "<html>
+<head>
+<title> My first Web Server </title>
+</head>
+<body>
+<h1> Hello My fellow DevOps</h1>
+<p> This page was created at <b>$DATE_TIME</b></p>
+</body>
+</html>" > /var/www/html/index.html
+    sudo systemctl start httpd
+    sudo systemctl enable httpd
+```
+in hte regular terminal:
+curl http://ec2-18-232-117-171.compute-1.amazonaws.com
