@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: 2010-09-09
+ 
+Resources:
+  MySecGroup: 
+      Type: "AWS::EC2::SecurityGroup"
+      Properties:
+        GroupDescription: String #required
+        GroupName: String
+        SecurityGroupEgress:
+          - Egress
+        SecurityGroupIngress:
+          - Ingress
+        Tags:
+          - Tag
+        VpcId: String
+    "
+    Description: 
+    Type: AWS::EC2::AvailabilityZone::Name
+    Default: 
+Transform:
+  
+Outputs:

@@ -16,7 +16,7 @@ sudo yum update -y
     sudo systemctl restart httpd
     sudo systemctl enable httpd      # web server is enabled now, web server will automatiacally restart when restarting hte instance
 ``` bash
-    #!1 /bin/bash
+    #! /bin/bash
     yum update -y
     sudo yum install httpd -y
     DATE_TIME=`date`
